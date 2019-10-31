@@ -118,8 +118,11 @@ function getCarInfoByIndex(arr, index) {
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
 */
-function getLastCarInfo(/* code here */) {
-  /* code here */
+function getLastCarInfo(arr) {
+  const carArray = arr;
+  const lastIndex = arr.length - 1;
+  comst lastCar = carArray[lastIndex];
+  return `This is a ${lastCar.car_make} ${lastCar.car_model}`;
 }
 
 /**
